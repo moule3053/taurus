@@ -1,0 +1,259 @@
+[2017-12-28 23:02:34,726 INFO root] Taurus CLI Tool v1.10.3
+[2017-12-28 23:02:34,727 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/tmp/bzt_friGTS.log', 'option': None, 'aliases': ['report']}
+[2017-12-28 23:02:34,727 DEBUG root] Python: CPython 2.7.14
+[2017-12-28 23:02:34,727 DEBUG root] OS: ('Linux', 'unknown3c970ebc3dc8', '4.14.6-300.fc27.x86_64', '#1 SMP Thu Dec 14 15:31:24 UTC 2017', 'x86_64', 'x86_64')
+[2017-12-28 23:02:34,728 INFO root] Starting with configs: ['taurus-phantomjs.yml']
+[2017-12-28 23:02:34,728 DEBUG root] Using personal config: /home/mayalew/.bzt-rc
+[2017-12-28 23:02:34,728 INFO Engine] Configuring...
+[2017-12-28 23:02:34,728 DEBUG Engine] No machine configs dir: /etc/bzt.d
+[2017-12-28 23:02:34,728 DEBUG Engine.Configuration] Configs: ['/usr/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2017-12-28 23:02:34,741 DEBUG Engine.Configuration] Reading /usr/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2017-12-28 23:02:34,772 DEBUG Engine.Configuration] Configs: ['/home/mayalew/.bzt-rc', 'taurus-phantomjs.yml']
+[2017-12-28 23:02:34,780 DEBUG Engine.Configuration] Reading /home/mayalew/.bzt-rc as YAML
+[2017-12-28 23:02:34,784 DEBUG Engine.Configuration] Reading taurus-phantomjs.yml as YAML
+[2017-12-28 23:02:34,786 DEBUG Engine.Configuration] Configs: ['/home/mayalew/.bzt-rc', 'taurus-phantomjs.yml']
+[2017-12-28 23:02:34,787 DEBUG Engine.Configuration] Reading /home/mayalew/.bzt-rc as YAML
+[2017-12-28 23:02:34,791 DEBUG Engine.Configuration] Reading taurus-phantomjs.yml as YAML
+[2017-12-28 23:02:34,808 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.10.3&installID=linux-3c970ebc3dc8
+[2017-12-28 23:02:34,808 INFO Engine] Artifacts dir: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482
+[2017-12-28 23:02:34,860 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective
+[2017-12-28 23:02:34,863 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.yml
+[2017-12-28 23:02:34,894 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.json
+[2017-12-28 23:02:34,895 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/merged.yml
+[2017-12-28 23:02:34,896 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/merged.yml
+[2017-12-28 23:02:34,897 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/merged.json
+[2017-12-28 23:02:34,897 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/merged.json
+[2017-12-28 23:02:34,898 DEBUG Engine] Add existing artifact (move=False): taurus-phantomjs.yml
+[2017-12-28 23:02:34,898 DEBUG Engine] Copying taurus-phantomjs.yml to /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/taurus-phantomjs.yml
+[2017-12-28 23:02:34,898 DEBUG root] Closing log handler: /tmp/bzt_friGTS.log
+[2017-12-28 23:02:34,898 DEBUG root] Switched writing logs to /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/bzt.log
+[2017-12-28 23:02:34,898 INFO Engine] Preparing...
+[2017-12-28 23:02:34,899 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2017-12-28 23:02:34,899 DEBUG root] Importing module: bzt.modules.aggregator
+[2017-12-28 23:02:35,035 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2017-12-28 23:02:35,035 DEBUG Engine.consolidator] Exception in dehumanize_time(inf)
+[2017-12-28 23:02:35,035 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2017-12-28 23:02:35,036 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2017-12-28 23:02:35,036 DEBUG root] Importing module: bzt.modules.monitoring
+[2017-12-28 23:02:35,040 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2017-12-28 23:02:35,041 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2017-12-28 23:02:35,041 DEBUG root] Importing module: bzt.modules.provisioning
+[2017-12-28 23:02:35,041 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2017-12-28 23:02:35,041 DEBUG Engine] Module config: selenium defaultdict(None, {'class': 'bzt.modules.selenium.SeleniumExecutor'})
+[2017-12-28 23:02:35,041 DEBUG root] Importing module: bzt.modules.selenium
+[2017-12-28 23:02:35,099 DEBUG easyprocess] version=0.2.3
+[2017-12-28 23:02:35,116 DEBUG pyvirtualdisplay] version=0.2.1
+[2017-12-28 23:02:35,291 DEBUG Engine] Taurus updates info: {"latest":"1.10.3","needsUpgrade":false}
+[2017-12-28 23:02:35,291 DEBUG Engine] Installation is up-to-date
+[2017-12-28 23:02:35,342 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/lib/python2.7/site-packages/bzt/modules/selenium.pyc'>
+[2017-12-28 23:02:35,343 DEBUG Engine.local] Preparing executor: selenium/140508178228432
+[2017-12-28 23:02:35,368 DEBUG Engine.selenium] Detected script type: junit
+[2017-12-28 23:02:35,368 DEBUG Engine] Module config: junit defaultdict(None, {'class': 'bzt.modules.java.JUnitTester'})
+[2017-12-28 23:02:35,368 DEBUG root] Importing module: bzt.modules.java
+[2017-12-28 23:02:35,388 DEBUG root] Loading class: 'JUnitTester' from <module 'bzt.modules.java' from '/usr/lib/python2.7/site-packages/bzt/modules/java.pyc'>
+[2017-12-28 23:02:37,012 DEBUG Engine.junit.JavaC] JavaC output: javac 1.8.0_151
+
+[2017-12-28 23:02:37,013 DEBUG Engine.junit.TclLibrary] We don't need to check tcl library on this platform
+[2017-12-28 23:02:37,013 DEBUG Engine.junit.JavaVM] Trying JavaVM: ['java', '-version']
+[2017-12-28 23:02:37,118 DEBUG Engine.junit.JavaVM] JavaVM output: openjdk version "1.8.0_151"
+OpenJDK Runtime Environment (build 1.8.0_151-b12)
+OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+[2017-12-28 23:02:37,119 DEBUG Engine.junit.SeleniumServerJar] Selenium server path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 23:02:37,119 DEBUG bzt.utils] Executing shell: ['java', '-jar', '/home/mayalew/.bzt/selenium-taurus/selenium-server.jar', '-help'] at .
+[2017-12-28 23:02:38,871 DEBUG Engine.junit.SeleniumServerJar] Selenium server output: ("Usage: <main class> [options]\n  Options:\n    --version, -version\n       Displays the version and exits.\n       Default: false\n    -browserTimeout\n       <Integer> in seconds : number of seconds a browser session is allowed to\n       hang while a WebDriver command is running (example: driver.get(url)). If the\n       timeout is reached while a WebDriver command is still processing, the session\n       will quit. Minimum value is 60. An unspecified, zero, or negative value means\n       wait indefinitely.\n       Default: 0\n    -debug\n       <Boolean> : enables LogLevel.FINE.\n       Default: false\n    -enablePassThrough\n       <Boolean>: Whether or not to use the experimental passthrough mode.\n       Defaults to true.\n       Default: true\n    -jettyThreads, -jettyMaxThreads\n       <Integer> : max number of threads for Jetty. An unspecified, zero, or\n       negative value means the Jetty default value (200) will be used.\n    -log\n       <String> filename : the filename to use for logging. If omitted, will log\n       to STDOUT\n    -port\n       <Integer> : the port number the server will use.\n       Default: 4444\n    -role\n       <String> options are [hub], [node], or [standalone].\n       Default: standalone\n    -timeout, -sessionTimeout\n       <Integer> in seconds : Specifies the timeout before the server\n       automatically kills a session that hasn't had any activity in the last X seconds. The\n       test slot will then be released for another test to use. This is typically\n       used to take care of client crashes. For grid hub/node roles, cleanUpCycle\n       must also be set.\n       Default: 1800\n\n", None)
+[2017-12-28 23:02:38,872 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes
+[2017-12-28 23:02:38,872 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/runner.properties
+[2017-12-28 23:02:38,873 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/JUnitTester.ldjson
+[2017-12-28 23:02:39,165 DEBUG Engine.junit.JavaC] JavaC output: javac 1.8.0_151
+
+[2017-12-28 23:02:39,165 DEBUG Engine.junit.TclLibrary] We don't need to check tcl library on this platform
+[2017-12-28 23:02:39,165 DEBUG Engine.junit.JavaVM] Trying JavaVM: ['java', '-version']
+[2017-12-28 23:02:39,236 DEBUG Engine.junit.JavaVM] JavaVM output: openjdk version "1.8.0_151"
+OpenJDK Runtime Environment (build 1.8.0_151-b12)
+OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+[2017-12-28 23:02:39,236 DEBUG Engine.junit.SeleniumServerJar] Selenium server path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 23:02:39,236 DEBUG bzt.utils] Executing shell: ['java', '-jar', '/home/mayalew/.bzt/selenium-taurus/selenium-server.jar', '-help'] at .
+[2017-12-28 23:02:39,577 DEBUG Engine.junit.SeleniumServerJar] Selenium server output: ("Usage: <main class> [options]\n  Options:\n    --version, -version\n       Displays the version and exits.\n       Default: false\n    -browserTimeout\n       <Integer> in seconds : number of seconds a browser session is allowed to\n       hang while a WebDriver command is running (example: driver.get(url)). If the\n       timeout is reached while a WebDriver command is still processing, the session\n       will quit. Minimum value is 60. An unspecified, zero, or negative value means\n       wait indefinitely.\n       Default: 0\n    -debug\n       <Boolean> : enables LogLevel.FINE.\n       Default: false\n    -enablePassThrough\n       <Boolean>: Whether or not to use the experimental passthrough mode.\n       Defaults to true.\n       Default: true\n    -jettyThreads, -jettyMaxThreads\n       <Integer> : max number of threads for Jetty. An unspecified, zero, or\n       negative value means the Jetty default value (200) will be used.\n    -log\n       <String> filename : the filename to use for logging. If omitted, will log\n       to STDOUT\n    -port\n       <Integer> : the port number the server will use.\n       Default: 4444\n    -role\n       <String> options are [hub], [node], or [standalone].\n       Default: standalone\n    -timeout, -sessionTimeout\n       <Integer> in seconds : Specifies the timeout before the server\n       automatically kills a session that hasn't had any activity in the last X seconds. The\n       test slot will then be released for another test to use. This is typically\n       used to take care of client crashes. For grid hub/node roles, cleanUpCycle\n       must also be set.\n       Default: 1800\n\n", None)
+[2017-12-28 23:02:39,578 DEBUG Engine.junit] Compiling .java files started
+[2017-12-28 23:02:39,578 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/javac.out
+[2017-12-28 23:02:39,578 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/javac.err
+[2017-12-28 23:02:39,578 DEBUG Engine.junit] running javac: ['javac', '-source', '1.8', '-target', '1.8', '-d', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java']
+[2017-12-28 23:02:39,579 DEBUG bzt.utils] Executing shell: ['javac', '-source', '1.8', '-target', '1.8', '-d', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java'] at .
+[2017-12-28 23:02:39,581 DEBUG Engine.junit] Compiling .java files...
+[2017-12-28 23:02:40,583 DEBUG Engine.junit] Compiling .java files...
+[2017-12-28 23:02:41,584 INFO Engine.junit] Compiling .java files completed
+[2017-12-28 23:02:41,584 DEBUG Engine.junit] Making .jar started
+[2017-12-28 23:02:41,584 DEBUG bzt.utils] Executing shell: ['jar', '-cf', 'compiled.jar', 'Blazedemoju.class'] at /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes
+[2017-12-28 23:02:41,654 DEBUG Engine.junit] Making jar file...
+[2017-12-28 23:02:42,655 INFO Engine.junit] Making .jar file completed
+[2017-12-28 23:02:42,657 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2017-12-28 23:02:42,657 DEBUG root] Importing module: bzt.modules.reporting
+[2017-12-28 23:02:44,125 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2017-12-28 23:02:44,126 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2017-12-28 23:02:44,126 DEBUG root] Importing module: bzt.modules.console
+[2017-12-28 23:02:44,126 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2017-12-28 23:02:44,127 DEBUG Engine] Module config: blazemeter defaultdict(None, {'class': 'bzt.modules.blazemeter.BlazeMeterUploader'})
+[2017-12-28 23:02:44,127 DEBUG root] Importing module: bzt.modules.blazemeter
+[2017-12-28 23:02:44,127 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2017-12-28 23:02:44,138 WARNING Engine.blazemeter] No BlazeMeter API key provided, will upload anonymously
+[2017-12-28 23:02:44,139 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2017-12-28 23:02:44,147 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2017-12-28 23:02:44,738 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 195
+[2017-12-28 23:02:44,745 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-backend-package 6188 release/2017-12-19_85 B6188  Wed Dec 27 17:46:54 2017 +0200 4e608a362326ae9b640792569b59242bf040b5b8\n"
+}
+[2017-12-28 23:02:44,750 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.yml
+[2017-12-28 23:02:44,786 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.json
+[2017-12-28 23:02:44,787 INFO Engine] Starting...
+[2017-12-28 23:02:44,788 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7fca9d19d3d0>
+[2017-12-28 23:02:44,788 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7fcaa044b590>
+[2017-12-28 23:02:44,788 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7fca964a9750>
+[2017-12-28 23:02:44,788 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7fca964bc410>
+[2017-12-28 23:02:44,788 INFO Engine.console] Waiting for results...
+[2017-12-28 23:02:44,788 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x7fca964d4890>
+[2017-12-28 23:02:44,789 INFO Engine.blazemeter] Initiating data feeding...
+[2017-12-28 23:02:44,789 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions None
+[2017-12-28 23:02:44,790 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2017-12-28 23:02:45,383 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions HTTP/1.1" 201 2124
+[2017-12-28 23:02:45,386 DEBUG User] Response [201]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5a456a05424c6",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "Hwyim0duf4K81kqgFAVafA7eGrqcFNFKtd4iapxvz3aW8
+[2017-12-28 23:02:45,387 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/?public-token=Hwyim0duf4K81kqgFAVafA7eGrqcFNFKtd4iapxvz3aW8soR9G#reports/r-ext-5a456a05424c6/summary
+[2017-12-28 23:02:45,438 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7fca9d17b450>
+[2017-12-28 23:02:45,438 DEBUG Engine.local] Delay setup for selenium/pjs-demo: 0(start-at) + 0(delay) = 0
+[2017-12-28 23:02:45,442 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.yml
+[2017-12-28 23:02:45,508 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.json
+[2017-12-28 23:02:45,510 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2017-12-28 23:02:45,511 DEBUG root] Leveled up log file verbosity
+[2017-12-28 23:02:45,511 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/junit.out
+[2017-12-28 23:02:45,511 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/junit.err
+[2017-12-28 23:02:45,511 DEBUG Engine.junit] Running process with env {'PATH': '/home/mayalew/.bzt/selenium-taurus/tools/chromedriver/2.33:/home/mayalew/.bzt/selenium-taurus/tools/geckodriver/0.19.0:/home/mayalew/ST/TP_Django/virtualenv/virtualenv-1.9/myVE/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/mayalew/.local/bin:/home/mayalew/bin'}
+[2017-12-28 23:02:45,512 DEBUG Engine.junit] Executing shell from /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo: ['java', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar:/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes/compiled.jar', 'taurusjunit.CustomRunner', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/runner.properties']
+[2017-12-28 23:02:45,512 DEBUG bzt.utils] Executing shell: ['java', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar:/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/classes/compiled.jar', 'taurusjunit.CustomRunner', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/runner.properties'] at /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo
+[2017-12-28 23:02:45,556 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2017-12-28 23:02:45,792 INFO Engine.console] Waiting for finish...
+[2017-12-28 23:03:01,326 INFO LoadSamplesReader] Changed data analysis delay to 24s
+[2017-12-28 23:03:30,372 INFO LoadSamplesReader] Changed data analysis delay to 2s
+[2017-12-28 23:03:41,936 WARNING Engine] Please wait for graceful shutdown...
+[2017-12-28 23:03:42,367 DEBUG root] Leveled up log file verbosity
+[2017-12-28 23:03:42,367 INFO Engine] Shutting down...
+[2017-12-28 23:03:42,382 DEBUG Engine.local] Shutdown selenium/pjs-demo
+[2017-12-28 23:03:43,384 INFO Engine.junit] Terminating process PID 10282 with signal 15 (59 tries left)
+[2017-12-28 23:03:44,618 INFO Engine.junit] Terminating process PID 10282 with signal 15 (58 tries left)
+[2017-12-28 23:03:45,636 INFO Engine.junit] Terminating process PID 10282 with signal 15 (57 tries left)
+[2017-12-28 23:03:46,700 INFO Engine.junit] Terminating process PID 10282 with signal 15 (56 tries left)
+[2017-12-28 23:03:47,720 INFO Engine.junit] Terminating process PID 10282 with signal 15 (55 tries left)
+[2017-12-28 23:03:47,739 DEBUG Engine.selenium] Selenium tests ran for 62.2284150124 seconds
+[2017-12-28 23:03:47,846 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x7fcaa08d2bd0>]/{<logging.StreamHandler object at 0x7fcaa08d2bd0>: <open file '<stdout>', mode 'w' at 0x7fcaabf0b150>}
+[2017-12-28 23:03:47,849 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.yml
+[2017-12-28 23:03:52,281 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.json
+[2017-12-28 23:03:52,283 WARNING root] Keyboard interrupt
+[2017-12-28 23:03:52,310 DEBUG root] KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/bzt/cli.py", line 225, in perform
+    self.engine.run()
+  File "/usr/lib/python2.7/site-packages/bzt/engine.py", line 202, in run
+    reraise(exc_info)
+  File "/usr/lib/python2.7/site-packages/bzt/engine.py", line 184, in run
+    self._wait()
+  File "/usr/lib/python2.7/site-packages/bzt/engine.py", line 227, in _wait
+    time.sleep(delay)
+KeyboardInterrupt
+[2017-12-28 23:03:52,310 INFO Engine] Post-processing...
+[2017-12-28 23:03:52,311 DEBUG Engine.local] Post-process selenium/pjs-demo
+[2017-12-28 23:03:52,362 DEBUG LoadSamplesReader] Buffer len: 1
+[2017-12-28 23:03:52,362 DEBUG LoadSamplesReader] Aggregating: 1514498619
+[2017-12-28 23:03:52,364 DEBUG Engine.consolidator] Consolidator buffer[3]: [1514498616, 1514498617, 1514498619]
+[2017-12-28 23:03:52,364 DEBUG Engine.consolidator] Merging into 1514498616
+[2017-12-28 23:03:52,364 DEBUG Engine.consolidator] Merging 1514498616
+[2017-12-28 23:03:52,370 DEBUG Engine.consolidator] Processed datapoint: 1514498616/None
+[2017-12-28 23:03:52,370 DEBUG Engine.consolidator] Merging into 1514498617
+[2017-12-28 23:03:52,370 DEBUG Engine.consolidator] Merging 1514498617
+[2017-12-28 23:03:52,376 DEBUG Engine.consolidator] Processed datapoint: 1514498617/None
+[2017-12-28 23:03:52,376 DEBUG Engine.consolidator] Merging into 1514498619
+[2017-12-28 23:03:52,376 DEBUG Engine.consolidator] Merging 1514498619
+[2017-12-28 23:03:52,380 DEBUG Engine.consolidator] Processed datapoint: 1514498619/None
+[2017-12-28 23:03:52,380 INFO Engine.final-stats] Test duration: 0:01:03
+[2017-12-28 23:03:52,380 INFO Engine.final-stats] Samples count: 160, 100.00% failures
+[2017-12-28 23:03:52,380 INFO Engine.final-stats] Average times: total 0.339, latency 0.000, connect 0.000
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 0.0%: 0.166
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 50.0%: 0.180
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 90.0%: 0.361
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 95.0%: 0.651
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 99.0%: 1.934
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 99.9%: 11.773
+[2017-12-28 23:03:52,381 INFO Engine.final-stats] Percentile 100.0%: 11.773
+[2017-12-28 23:03:52,381 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2017-12-28 23:03:52,381 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 41
+[2017-12-28 23:03:52,381 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2017-12-28 23:03:52,395 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5a456a05424c6&signature=babe4f6a93daae2ce1adc6d3ec455046&test_id=5878525&user_id=386483&pq=0&target=labels_bulk&update=1 {
+ "sourceID": 140508081768592, 
+ "labels": [
+  {
+   "percentileHistogramBytes": [], 
+   "errors": [
+    {
+     "count": 160, 
+     "m": "java.lang.NullPointerException: null", 
+     "rc": "500"
+    }
+   ], 
+   "name": "ALL", 
+   "interval": 1, 
+   "otherE
+[2017-12-28 23:03:52,460 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): data.blazemeter.com
+[2017-12-28 23:03:53,991 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext-5a456a05424c6&signature=babe4f6a93daae2ce1adc6d3ec455046&test_id=5878525&user_id=386483&pq=0&target=labels_bulk&update=1 HTTP/1.1" 200 140
+[2017-12-28 23:03:53,994 DEBUG User] Response [200]: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext-5a456a05424c6","name":"external","statusCode":100,"status":"INITIALIZING"}}}
+[2017-12-28 23:03:54,145 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5a456a05424c6/files?signature=babe4f6a93daae2ce1adc6d3ec455046 --===============6347620187011214821==
+Content-Disposition: file; name="file"; filename="r-ext-5a456a05424c6-0-c.monitoring.json"
+Content-Type: application/json
+
+{
+ "kpis": {
+  "Connections": "Connections", 
+  "CPU": "CPU", 
+  "Network I/O": "Network I
+[2017-12-28 23:03:54,149 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2017-12-28 23:03:57,101 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/image/r-ext-5a456a05424c6/files?signature=babe4f6a93daae2ce1adc6d3ec455046 HTTP/1.1" 200 116
+[2017-12-28 23:03:57,105 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext-5a456a05424c6-0-c.monitoring.json"
+    ]
+}
+[2017-12-28 23:03:57,106 DEBUG Engine.blazemeter] Set last check time to: 1514498564.13
+[2017-12-28 23:03:57,106 INFO Engine.blazemeter] Ending data feeding...
+[2017-12-28 23:03:57,107 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5a456a05424c6/terminate-external {
+ "sessionId": "r-ext-5a456a05424c6", 
+ "testId": 5878525, 
+ "signature": "babe4f6a93daae2ce1adc6d3ec455046"
+}
+[2017-12-28 23:03:57,108 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2017-12-28 23:03:57,803 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext-5a456a05424c6/terminate-external HTTP/1.1" 200 1601
+[2017-12-28 23:03:57,807 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "success": true,
+        "session": {
+            "id": "r-ext-5a456a05424c6",
+            "name": "external",
+            "userId": 386483,
+            "publicToken": "Hwyim0duf4K81kqgFAVa
+[2017-12-28 23:03:57,808 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/?public-token=Hwyim0duf4K81kqgFAVafA7eGrqcFNFKtd4iapxvz3aW8soR9G#reports/r-ext-5a456a05424c6/summary
+[2017-12-28 23:03:57,830 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.yml
+[2017-12-28 23:03:57,872 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/effective.json
+[2017-12-28 23:03:57,874 INFO root] Artifacts dir: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482
+[2017-12-28 23:03:57,874 WARNING root] Done performing with code: 1
+[2017-12-28 23:03:57,875 DEBUG root] Closing log handler: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_23-02-34.808482/bzt.log

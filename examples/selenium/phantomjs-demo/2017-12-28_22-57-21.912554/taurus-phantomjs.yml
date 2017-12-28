@@ -2,8 +2,8 @@
 execution:
 - executor: selenium
   scenario: pjs-demo
-  concurrerncy: 1
-  #  ramp-up: 10m
+  concurrerncy: 50
+  ramp-up: 10m
   hold-for: 5m
   files:
   - /usr/bin/phantomjs

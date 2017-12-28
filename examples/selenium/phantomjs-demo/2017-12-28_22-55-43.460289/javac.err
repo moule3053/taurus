@@ -1,0 +1,7 @@
+/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:43: error: ';' expected
+    public void tearDown() {
+                        ^
+/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:46: error: reached end of file while parsing
+}
+ ^
+2 errors

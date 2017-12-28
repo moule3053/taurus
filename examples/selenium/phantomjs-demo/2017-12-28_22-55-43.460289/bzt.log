@@ -1,0 +1,167 @@
+[2017-12-28 22:55:43,400 INFO root] Taurus CLI Tool v1.10.3
+[2017-12-28 22:55:43,401 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/tmp/bzt_aAwIgm.log', 'option': None, 'aliases': ['report']}
+[2017-12-28 22:55:43,401 DEBUG root] Python: CPython 2.7.14
+[2017-12-28 22:55:43,401 DEBUG root] OS: ('Linux', 'unknown3c970ebc3dc8', '4.14.6-300.fc27.x86_64', '#1 SMP Thu Dec 14 15:31:24 UTC 2017', 'x86_64', 'x86_64')
+[2017-12-28 22:55:43,401 INFO root] Starting with configs: ['taurus-phantomjs.yml']
+[2017-12-28 22:55:43,401 DEBUG root] Adding personal config: /home/mayalew/.bzt-rc
+[2017-12-28 22:55:43,401 INFO root] No personal config found, creating one at /home/mayalew/.bzt-rc
+[2017-12-28 22:55:43,402 INFO Engine] Configuring...
+[2017-12-28 22:55:43,402 DEBUG Engine] No machine configs dir: /etc/bzt.d
+[2017-12-28 22:55:43,402 DEBUG Engine.Configuration] Configs: ['/usr/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2017-12-28 22:55:43,402 DEBUG Engine.Configuration] Reading /usr/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2017-12-28 22:55:43,443 DEBUG Engine.Configuration] Configs: ['/home/mayalew/.bzt-rc', 'taurus-phantomjs.yml']
+[2017-12-28 22:55:43,444 DEBUG Engine.Configuration] Reading /home/mayalew/.bzt-rc as YAML
+[2017-12-28 22:55:43,449 DEBUG Engine.Configuration] Reading taurus-phantomjs.yml as YAML
+[2017-12-28 22:55:43,452 DEBUG Engine.Configuration] Configs: ['/home/mayalew/.bzt-rc', 'taurus-phantomjs.yml']
+[2017-12-28 22:55:43,452 DEBUG Engine.Configuration] Reading /home/mayalew/.bzt-rc as YAML
+[2017-12-28 22:55:43,456 DEBUG Engine.Configuration] Reading taurus-phantomjs.yml as YAML
+[2017-12-28 22:55:43,460 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.10.3&installID=linux-3c970ebc3dc8
+[2017-12-28 22:55:43,460 INFO Engine] Artifacts dir: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289
+[2017-12-28 22:55:43,462 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/effective
+[2017-12-28 22:55:43,464 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/effective.yml
+[2017-12-28 22:55:43,494 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/effective.json
+[2017-12-28 22:55:43,495 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/merged.yml
+[2017-12-28 22:55:43,495 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/merged.yml
+[2017-12-28 22:55:43,498 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/merged.json
+[2017-12-28 22:55:43,499 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/merged.json
+[2017-12-28 22:55:43,500 DEBUG Engine] Add existing artifact (move=False): taurus-phantomjs.yml
+[2017-12-28 22:55:43,500 DEBUG Engine] Copying taurus-phantomjs.yml to /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/taurus-phantomjs.yml
+[2017-12-28 22:55:43,500 DEBUG root] Closing log handler: /tmp/bzt_aAwIgm.log
+[2017-12-28 22:55:43,501 DEBUG root] Switched writing logs to /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/bzt.log
+[2017-12-28 22:55:43,502 INFO Engine] Preparing...
+[2017-12-28 22:55:43,503 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2017-12-28 22:55:43,503 DEBUG root] Importing module: bzt.modules.aggregator
+[2017-12-28 22:55:43,547 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2017-12-28 22:55:43,547 DEBUG Engine.consolidator] Exception in dehumanize_time(inf)
+[2017-12-28 22:55:43,547 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2017-12-28 22:55:43,547 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2017-12-28 22:55:43,548 DEBUG root] Importing module: bzt.modules.monitoring
+[2017-12-28 22:55:43,550 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2017-12-28 22:55:43,550 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2017-12-28 22:55:43,550 DEBUG root] Importing module: bzt.modules.provisioning
+[2017-12-28 22:55:43,550 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2017-12-28 22:55:43,550 DEBUG Engine] Module config: selenium defaultdict(None, {'class': 'bzt.modules.selenium.SeleniumExecutor'})
+[2017-12-28 22:55:43,550 DEBUG root] Importing module: bzt.modules.selenium
+[2017-12-28 22:55:43,552 DEBUG easyprocess] version=0.2.3
+[2017-12-28 22:55:43,553 DEBUG pyvirtualdisplay] version=0.2.1
+[2017-12-28 22:55:43,727 DEBUG Engine] Taurus updates info: {"latest":"1.10.3","needsUpgrade":false}
+[2017-12-28 22:55:43,728 DEBUG Engine] Installation is up-to-date
+[2017-12-28 22:55:43,733 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/lib/python2.7/site-packages/bzt/modules/selenium.pyc'>
+[2017-12-28 22:55:43,733 DEBUG Engine.local] Preparing executor: selenium/140499329119376
+[2017-12-28 22:55:43,733 INFO Engine.selenium] Installing ChromeDriver...
+[2017-12-28 22:55:43,734 INFO Engine.selenium.ChromeDriver] Will install ChromeDriver into /home/mayalew/.bzt/selenium-taurus/tools/chromedriver/2.33
+[2017-12-28 22:55:43,734 INFO Engine.selenium.ChromeDriver] Downloading: https://chromedriver.storage.googleapis.com/2.33/chromedriver_linux64.zip
+[2017-12-28 22:55:48,944 INFO Engine.selenium.ChromeDriver] Unzipping /tmp/tmp6L3Gno.zip to /home/mayalew/.bzt/selenium-taurus/tools/chromedriver/2.33
+[2017-12-28 22:55:48,945 DEBUG root] Extracting /tmp/tmp6L3Gno.zip to /home/mayalew/.bzt/selenium-taurus/tools/chromedriver/2.33
+[2017-12-28 22:55:48,945 DEBUG root] Writing /home/mayalew/.bzt/selenium-taurus/tools/chromedriver/2.33/chromedriver
+[2017-12-28 22:55:49,052 INFO Engine.selenium] Installing GeckoDriver...
+[2017-12-28 22:55:49,053 INFO Engine.selenium.GeckoDriver] Will install GeckoDriver into /home/mayalew/.bzt/selenium-taurus/tools/geckodriver/0.19.0
+[2017-12-28 22:55:49,053 INFO Engine.selenium.GeckoDriver] Downloading: https://github.com/mozilla/geckodriver/releases/download/v0.19.0/geckodriver-v0.19.0-linux64.tar.gz
+[2017-12-28 22:55:53,596 INFO Engine.selenium.GeckoDriver] Untaring /tmp/tmpP_zOIT.zip to /home/mayalew/.bzt/selenium-taurus/tools/geckodriver/0.19.0
+[2017-12-28 22:55:53,669 DEBUG Engine.selenium] Detected script type: junit
+[2017-12-28 22:55:53,670 DEBUG Engine] Module config: junit defaultdict(None, {'class': 'bzt.modules.java.JUnitTester'})
+[2017-12-28 22:55:53,670 DEBUG root] Importing module: bzt.modules.java
+[2017-12-28 22:55:53,671 DEBUG root] Loading class: 'JUnitTester' from <module 'bzt.modules.java' from '/usr/lib/python2.7/site-packages/bzt/modules/java.pyc'>
+[2017-12-28 22:55:53,671 WARNING Engine] Could not find location at path: /home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar
+[2017-12-28 22:55:53,672 WARNING Engine] Could not find location at path: /home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar
+[2017-12-28 22:55:53,673 WARNING Engine] Could not find location at path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 22:55:53,673 WARNING Engine] Could not find location at path: /home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar
+[2017-12-28 22:55:56,838 DEBUG Engine.junit.JavaC] JavaC output: javac 1.8.0_151
+
+[2017-12-28 22:55:56,838 DEBUG Engine.junit.TclLibrary] We don't need to check tcl library on this platform
+[2017-12-28 22:55:56,838 DEBUG Engine.junit.JavaVM] Trying JavaVM: ['java', '-version']
+[2017-12-28 22:55:56,973 DEBUG Engine.junit.JavaVM] JavaVM output: openjdk version "1.8.0_151"
+OpenJDK Runtime Environment (build 1.8.0_151-b12)
+OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+[2017-12-28 22:55:56,973 DEBUG Engine.junit.SeleniumServerJar] Selenium server path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 22:55:56,974 DEBUG bzt.utils] Executing shell: ['java', '-jar', '/home/mayalew/.bzt/selenium-taurus/selenium-server.jar', '-help'] at .
+[2017-12-28 22:55:56,978 DEBUG Engine.junit.SeleniumServerJar] Selenium server output: ('Error: Unable to access jarfile /home/mayalew/.bzt/selenium-taurus/selenium-server.jar\n', None)
+[2017-12-28 22:55:56,978 INFO Engine.junit] Installing Selenium server...
+[2017-12-28 22:55:56,979 INFO Engine.junit.SeleniumServerJar] Downloading http://selenium-release.storage.googleapis.com/3.6/selenium-server-standalone-3.6.0.jar
+[2017-12-28 22:56:27,560 DEBUG Engine.junit.SeleniumServerJar] Selenium server path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 22:56:27,560 DEBUG bzt.utils] Executing shell: ['java', '-jar', '/home/mayalew/.bzt/selenium-taurus/selenium-server.jar', '-help'] at .
+[2017-12-28 22:56:28,098 DEBUG Engine.junit.SeleniumServerJar] Selenium server output: ("Usage: <main class> [options]\n  Options:\n    --version, -version\n       Displays the version and exits.\n       Default: false\n    -browserTimeout\n       <Integer> in seconds : number of seconds a browser session is allowed to\n       hang while a WebDriver command is running (example: driver.get(url)). If the\n       timeout is reached while a WebDriver command is still processing, the session\n       will quit. Minimum value is 60. An unspecified, zero, or negative value means\n       wait indefinitely.\n       Default: 0\n    -debug\n       <Boolean> : enables LogLevel.FINE.\n       Default: false\n    -enablePassThrough\n       <Boolean>: Whether or not to use the experimental passthrough mode.\n       Defaults to true.\n       Default: true\n    -jettyThreads, -jettyMaxThreads\n       <Integer> : max number of threads for Jetty. An unspecified, zero, or\n       negative value means the Jetty default value (200) will be used.\n    -log\n       <String> filename : the filename to use for logging. If omitted, will log\n       to STDOUT\n    -port\n       <Integer> : the port number the server will use.\n       Default: 4444\n    -role\n       <String> options are [hub], [node], or [standalone].\n       Default: standalone\n    -timeout, -sessionTimeout\n       <Integer> in seconds : Specifies the timeout before the server\n       automatically kills a session that hasn't had any activity in the last X seconds. The\n       test slot will then be released for another test to use. This is typically\n       used to take care of client crashes. For grid hub/node roles, cleanUpCycle\n       must also be set.\n       Default: 1800\n\n", None)
+[2017-12-28 22:56:28,099 DEBUG Engine.junit.JUnitJar] File not exists: /home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar
+[2017-12-28 22:56:28,100 INFO Engine.junit] Installing JUnit...
+[2017-12-28 22:56:28,100 INFO Engine.junit.JUnitJar] Will install JUnit into /home/mayalew/.bzt/selenium-taurus/tools/junit
+[2017-12-28 22:56:28,100 DEBUG Engine.junit.JUnitJar.JUnitMirrorsManager] Retrieving mirrors from page: http://search.maven.org/solrsearch/select?q=g%3A%22junit%22%20AND%20a%3A%22junit%22%20AND%20v%3A%224.12%22&rows=20&wt=json
+[2017-12-28 22:56:28,385 DEBUG Engine.junit.JUnitJar.JUnitMirrorsManager] Parsing mirrors...
+[2017-12-28 22:56:28,385 DEBUG Engine.junit.JUnitJar.JUnitMirrorsManager] Total mirrors: 1
+[2017-12-28 22:56:28,386 INFO Engine.junit.JUnitJar] Downloading: http://search.maven.org/remotecontent?filepath=junit/junit/4.12/junit-4.12.jar
+[2017-12-28 22:56:29,258 INFO Engine.junit.JUnitJar] Installed JUnit successfully
+[2017-12-28 22:56:29,258 DEBUG root] File not exists: /home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar
+[2017-12-28 22:56:29,259 INFO Engine.junit] Installing HamcrestJar...
+[2017-12-28 22:56:29,259 INFO root] Downloading http://search.maven.org/remotecontent?filepath=org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[2017-12-28 22:56:29,767 DEBUG root] File not exists: /home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar
+[2017-12-28 22:56:29,767 INFO Engine.junit] Installing JsonJar...
+[2017-12-28 22:56:29,767 INFO root] Downloading http://search.maven.org/remotecontent?filepath=org/json/json/20160810/json-20160810.jar
+[2017-12-28 22:56:30,318 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/classes
+[2017-12-28 22:56:30,318 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/runner.properties
+[2017-12-28 22:56:30,319 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/JUnitTester.ldjson
+[2017-12-28 22:56:30,507 DEBUG Engine.junit.JavaC] JavaC output: javac 1.8.0_151
+
+[2017-12-28 22:56:30,507 DEBUG Engine.junit.TclLibrary] We don't need to check tcl library on this platform
+[2017-12-28 22:56:30,507 DEBUG Engine.junit.JavaVM] Trying JavaVM: ['java', '-version']
+[2017-12-28 22:56:30,566 DEBUG Engine.junit.JavaVM] JavaVM output: openjdk version "1.8.0_151"
+OpenJDK Runtime Environment (build 1.8.0_151-b12)
+OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+[2017-12-28 22:56:30,566 DEBUG Engine.junit.SeleniumServerJar] Selenium server path: /home/mayalew/.bzt/selenium-taurus/selenium-server.jar
+[2017-12-28 22:56:30,566 DEBUG bzt.utils] Executing shell: ['java', '-jar', '/home/mayalew/.bzt/selenium-taurus/selenium-server.jar', '-help'] at .
+[2017-12-28 22:56:30,828 DEBUG Engine.junit.SeleniumServerJar] Selenium server output: ("Usage: <main class> [options]\n  Options:\n    --version, -version\n       Displays the version and exits.\n       Default: false\n    -browserTimeout\n       <Integer> in seconds : number of seconds a browser session is allowed to\n       hang while a WebDriver command is running (example: driver.get(url)). If the\n       timeout is reached while a WebDriver command is still processing, the session\n       will quit. Minimum value is 60. An unspecified, zero, or negative value means\n       wait indefinitely.\n       Default: 0\n    -debug\n       <Boolean> : enables LogLevel.FINE.\n       Default: false\n    -enablePassThrough\n       <Boolean>: Whether or not to use the experimental passthrough mode.\n       Defaults to true.\n       Default: true\n    -jettyThreads, -jettyMaxThreads\n       <Integer> : max number of threads for Jetty. An unspecified, zero, or\n       negative value means the Jetty default value (200) will be used.\n    -log\n       <String> filename : the filename to use for logging. If omitted, will log\n       to STDOUT\n    -port\n       <Integer> : the port number the server will use.\n       Default: 4444\n    -role\n       <String> options are [hub], [node], or [standalone].\n       Default: standalone\n    -timeout, -sessionTimeout\n       <Integer> in seconds : Specifies the timeout before the server\n       automatically kills a session that hasn't had any activity in the last X seconds. The\n       test slot will then be released for another test to use. This is typically\n       used to take care of client crashes. For grid hub/node roles, cleanUpCycle\n       must also be set.\n       Default: 1800\n\n", None)
+[2017-12-28 22:56:30,829 DEBUG Engine.junit] Compiling .java files started
+[2017-12-28 22:56:30,829 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/javac.out
+[2017-12-28 22:56:30,829 DEBUG Engine] New artifact filename: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/javac.err
+[2017-12-28 22:56:30,830 DEBUG Engine.junit] running javac: ['javac', '-source', '1.8', '-target', '1.8', '-d', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/classes', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java']
+[2017-12-28 22:56:30,830 DEBUG bzt.utils] Executing shell: ['javac', '-source', '1.8', '-target', '1.8', '-d', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/classes', '-cp', '/home/mayalew/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/json.jar:/home/mayalew/.bzt/selenium-taurus/selenium-server.jar:/home/mayalew/.bzt/selenium-taurus/tools/junit/junit.jar:/usr/lib/python2.7/site-packages/bzt/resources/taurus-junit-1.0.jar', '/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java'] at .
+[2017-12-28 22:56:30,833 DEBUG Engine.junit] Compiling .java files...
+[2017-12-28 22:56:31,835 DEBUG Engine.junit] javac exit code: 1
+[2017-12-28 22:56:31,835 ERROR root] Child Process Error: Javac exited with code: 1
+ /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:43: error: ';' expected
+    public void tearDown() {
+                        ^
+/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:46: error: reached end of file while parsing
+}
+ ^
+2 errors
+[2017-12-28 22:56:31,838 DEBUG root] ToolError: Javac exited with code: 1
+ /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:43: error: ';' expected
+    public void tearDown() {
+                        ^
+/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:46: error: reached end of file while parsing
+}
+ ^
+2 errors
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/site-packages/bzt/cli.py", line 224, in perform
+    self.engine.prepare()
+  File "/usr/lib/python2.7/site-packages/bzt/engine.py", line 158, in prepare
+    self.__prepare_provisioning()
+  File "/usr/lib/python2.7/site-packages/bzt/engine.py", line 490, in __prepare_provisioning
+    self.provisioning.prepare()
+  File "/usr/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 71, in prepare
+    executor.prepare()
+  File "/usr/lib/python2.7/site-packages/bzt/modules/selenium.py", line 200, in prepare
+    self.runner.prepare()
+  File "/usr/lib/python2.7/site-packages/bzt/modules/java.py", line 206, in prepare
+    self.compile_scripts()
+  File "/usr/lib/python2.7/site-packages/bzt/modules/java.py", line 151, in compile_scripts
+    raise ToolError("Javac exited with code: %s\n %s" % (ret_code, out.strip()))
+ToolError: Javac exited with code: 1
+ /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:43: error: ';' expected
+    public void tearDown() {
+                        ^
+/home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/src/test/java/Blazedemoju.java:46: error: reached end of file while parsing
+}
+ ^
+2 errors
+[2017-12-28 22:56:31,839 INFO Engine] Post-processing...
+[2017-12-28 22:56:31,840 DEBUG Engine.junit.TestReportReader.LDJSONReader] No data to start reading yet
+[2017-12-28 22:56:31,840 DEBUG LoadSamplesReader] Buffer len: 0
+[2017-12-28 22:56:31,840 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2017-12-28 22:56:31,845 DEBUG Engine.Configuration] Dumping YAML config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/effective.yml
+[2017-12-28 22:56:31,883 DEBUG Engine.Configuration] Dumping JSON config into /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/effective.json
+[2017-12-28 22:56:31,885 INFO root] Artifacts dir: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289
+[2017-12-28 22:56:31,885 WARNING root] Done performing with code: 1
+[2017-12-28 22:56:31,885 DEBUG root] Closing log handler: /home/mayalew/containerstuff/taurus/examples/selenium/phantomjs-demo/2017-12-28_22-55-43.460289/bzt.log

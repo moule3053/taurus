@@ -1,15 +1,15 @@
 ---
 execution:
-- executor: selenium
-  scenario: pjs-demo
-  concurrerncy: 1
-  #  ramp-up: 10m
-  hold-for: 5m
+- concurrerncy: 50
+  executor: selenium
   files:
   - /usr/bin/phantomjs
+  hold-for: 5m
   locations:
     us-west-1: 1
-
+  ramp-up: 10m
+  scenario: pjs-demo
 scenarios:
   pjs-demo:
     script: src/test/java
+
